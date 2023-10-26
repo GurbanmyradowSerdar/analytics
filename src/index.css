@@ -2,3 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.first-section {
+  background-image: url(./icons/bg-line.svg), url(./icons/bg-icon.svg),
+    url(./icons/bg-icon-big.svg);
+  background-repeat: no-repeat;
+  background-position: bottom, -15% -90%, 150% 30%;
+  background-size: contain, auto, auto;
+}
