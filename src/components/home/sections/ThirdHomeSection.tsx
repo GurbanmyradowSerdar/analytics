@@ -1,18 +1,22 @@
 import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
 import MainTitle from "../components/MainTitle";
+import PieChartComponent from "../components/charts/PieChartComponent";
 
 const cards = [
   {
     title: "Automated Reports & Widget Alerts",
     text: "Automated reports are a feature offered by analytics companies that allow businesses to generate and distribute reports automatically. These reports can provide insights on key metrics, performance indicators, and trends.",
+    chart: PieChartComponent,
   },
   {
     title: "Fully customizable to address your needs",
     text: "A fully customizable solution is designed to adapt and cater to the unique needs and requirements of a business or individual. It allows users to tailor the features, functionalities, and appearance of the solution according to their specific preferences.",
+    chart: PieChartComponent,
   },
   {
     title: "Pre-built Dashboard Templates",
     text: "Pre-built dashboard templates are pre-designed and pre-configured dashboard layouts offered by analytics companies or software providers. These templates serve as a starting point for creating data visualizations and monitoring key metrics.",
+    chart: PieChartComponent,
   },
 ];
 
@@ -35,7 +39,7 @@ const ThirdHomeSection = () => {
                 <MainTitle text={item.title} />
                 <p className="text-lg">{item.text}</p>
               </div>
-              <div className="w-[500px] h-[500px] bg-gray-500 flex-[0_1_50%]"></div>
+              <item.chart className="flex-[0_1_50%]" />
             </div>
           );
         })}
