@@ -4,7 +4,7 @@ import "../../../index.css";
 
 const FirstHomeSection = () => {
   return (
-    <div className="min-h-screen bg-primary-color first-section relative overflow-hidden">
+    <div className="min-h-[900px] bg-primary-color first-section relative overflow-hidden">
       <img
         src="/images/chart-1.png"
         alt="chart"

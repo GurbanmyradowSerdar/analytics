@@ -1,5 +1,7 @@
 import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
 import MainTitle from "../components/MainTitle";
+import CalendarComponent from "../components/charts/CalendarComponent";
+import HorizontalChartComponent from "../components/charts/HorizontalChartComponent";
 import PieChartComponent from "../components/charts/PieChartComponent";
 
 const cards = [
@@ -11,12 +13,12 @@ const cards = [
   {
     title: "Fully customizable to address your needs",
     text: "A fully customizable solution is designed to adapt and cater to the unique needs and requirements of a business or individual. It allows users to tailor the features, functionalities, and appearance of the solution according to their specific preferences.",
-    chart: PieChartComponent,
+    chart: HorizontalChartComponent,
   },
   {
     title: "Pre-built Dashboard Templates",
     text: "Pre-built dashboard templates are pre-designed and pre-configured dashboard layouts offered by analytics companies or software providers. These templates serve as a starting point for creating data visualizations and monitoring key metrics.",
-    chart: PieChartComponent,
+    chart: CalendarComponent,
   },
 ];
 
@@ -27,7 +29,7 @@ const ThirdHomeSection = () => {
         {cards.map((item, i) => {
           return i === 1 ? (
             <div key={i} className="flex items-center justify-between">
-              <div className="w-[500px] h-[500px] bg-gray-500 flex-[0_1_50%]"></div>
+              <item.chart className="flex-[0_1_50%]" />
               <div className="flex flex-col flex-[1_1_50%] max-w-lg gap-5">
                 <MainTitle text={item.title} />
                 <p className="text-lg">{item.text}</p>

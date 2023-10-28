@@ -20,3 +20,8 @@ export interface IHorizontalLimiterWrapper extends IClassName {
 export interface IMainTitle extends IClassName {
   text: string;
 }
+
+// ! charts card wrapper
+export interface IChartCardWrapper extends IClassName {
+  children: React.ReactNode;
+}
