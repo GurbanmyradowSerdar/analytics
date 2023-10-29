@@ -1,7 +1,6 @@
-import Header from "../../Header";
 import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
 
-const FirstHomeSection = () => {
+const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
   return (
     <section className="min-h-[900px] bg-primary-color first-section relative overflow-hidden">
       <img
@@ -16,7 +15,7 @@ const FirstHomeSection = () => {
       />
 
       <HorizontalLimiterWrapper className="flex flex-col gap-40">
-        <Header />
+        {children}
         <div className="flex flex-col items-start gap-12 max-w-lg">
           <div className="flex flex-col gap-4">
             <h1 className="text-white text-5xl leading-[60px] font-bold">
@@ -27,7 +26,7 @@ const FirstHomeSection = () => {
               practice for any successful entrepreneur or business owner.
             </h4>
           </div>
-          <button className="bg-secondary-color px-20 py-4 rounded-full text-white">
+          <button className="bg-secondary-color px-20 py-4 rounded-full text-white transition-all duration-300 shadow-2xl shadow-secondary-color/30 hover:bg-secondary-color/90">
             Try for free
           </button>
         </div>

@@ -13,14 +13,18 @@ const Footer = ({ navItems, className }: IFooter) => {
       <HorizontalLimiterWrapper className="pb-24 pt-3 mt-24 flex flex-col gap-14">
         <div className="h-[1px] w-full bg-[#2A407C]"></div>
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-1">
+          <a href="#" className="flex items-center gap-1">
             <img src="./icons/logo/logo-gray.svg" alt="logo" />
             <img src="./icons/logo/logo-text-gray.svg" alt="logo" />
-          </div>
+          </a>
           <nav className="flex items-center gap-9">
             {navItems.map((item, i) => {
               return (
-                <a href="#" key={i} className="text-sm">
+                <a
+                  href="#"
+                  key={i}
+                  className="transition-all duration-300 hover:text-[#c8d0e6]"
+                >
                   {item}
                 </a>
               );
@@ -29,7 +33,11 @@ const Footer = ({ navItems, className }: IFooter) => {
           <div className="flex items-center gap-10">
             {socialMediaItems.map((item, i) => {
               return (
-                <a href="#" key={i}>
+                <a
+                  href="#"
+                  key={i}
+                  className="transition-all duration-300 hover:scale-125"
+                >
                   <img src={item} alt="social_media" />
                 </a>
               );
