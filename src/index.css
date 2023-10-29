@@ -10,3 +10,17 @@
   background-position: bottom, -15% -90%, 150% 30%;
   background-size: contain, auto, auto;
 }
+
+.third-section {
+  background-image: url(./icons/bg-line-1.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.fourth-section {
+  background-image: url(./icons/bg-icon-big.svg);
+  background-repeat: no-repeat;
+  background-position: -900% -5%;
+  background-size: 2000px;
+}

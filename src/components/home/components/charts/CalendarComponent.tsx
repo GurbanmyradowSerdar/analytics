@@ -3,8 +3,8 @@ import ChartCardWrapper from "./ChartCardWrapper";
 
 const CalendarComponent = ({ className }: IClassName) => {
   return (
-    <ChartCardWrapper className={`${className} py-12`}>
-      <table className="w-full text-center">
+    <ChartCardWrapper className={`${className} flex justify-center`}>
+      <table className="text-center w-9/12">
         <thead>
           <tr className="text-xs uppercase text-center">
             <th className="p-5">Mon</th>

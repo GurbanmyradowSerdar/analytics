@@ -9,8 +9,8 @@ const socialMediaItems: string[] = [
 
 const Footer = ({ navItems, className }: IFooter) => {
   return (
-    <div className={`${className} bg-primary-color`}>
-      <HorizontalLimiterWrapper className="pb-24 pt-3 flex flex-col gap-14">
+    <footer className={`${className}`}>
+      <HorizontalLimiterWrapper className="pb-24 pt-3 mt-24 flex flex-col gap-14">
         <div className="h-[1px] w-full bg-[#2A407C]"></div>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1">
@@ -37,7 +37,7 @@ const Footer = ({ navItems, className }: IFooter) => {
           </div>
         </div>
       </HorizontalLimiterWrapper>
-    </div>
+    </footer>
   );
 };
 

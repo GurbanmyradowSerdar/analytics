@@ -5,7 +5,7 @@ import { IHeader } from "../types";
 const Header = ({ className }: IHeader) => {
   const navItems = useContext(AppContext);
   return (
-    <div className={`${className} flex items-center justify-between pt-12`}>
+    <header className={`${className} flex items-center justify-between pt-12`}>
       <div className="flex items-center gap-36">
         <div className="flex items-center gap-1">
           <img src="./icons/logo/logo.svg" alt="logo" />
@@ -29,7 +29,7 @@ const Header = ({ className }: IHeader) => {
           Sign Up
         </button>
       </div>
-    </div>
+    </header>
   );
 };
 

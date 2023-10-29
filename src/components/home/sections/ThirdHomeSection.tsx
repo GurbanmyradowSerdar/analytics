@@ -24,7 +24,7 @@ const cards = [
 
 const ThirdHomeSection = () => {
   return (
-    <div className="bg-[#F8F9FF]">
+    <section className="bg-[#F8F9FF] third-section pb-96">
       <HorizontalLimiterWrapper className="flex flex-col pt-32 pb-20 gap-28">
         {cards.map((item, i) => {
           return i === 1 ? (
@@ -46,7 +46,7 @@ const ThirdHomeSection = () => {
           );
         })}
       </HorizontalLimiterWrapper>
-    </div>
+    </section>
   );
 };
 

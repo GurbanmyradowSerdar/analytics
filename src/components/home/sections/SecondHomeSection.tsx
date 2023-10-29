@@ -21,7 +21,7 @@ const cards = [
 
 const SecondHomeSection = () => {
   return (
-    <div className="bg-[#F8F9FF] pt-10">
+    <section className="bg-[#F8F9FF] pt-20">
       <HorizontalLimiterWrapper className="flex flex-col gap-20">
         <div className="flex flex-col items-center gap-7 text-center">
           <MainTitle text="Main Features" />
@@ -51,7 +51,7 @@ const SecondHomeSection = () => {
           })}
         </div>
       </HorizontalLimiterWrapper>
-    </div>
+    </section>
   );
 };
 

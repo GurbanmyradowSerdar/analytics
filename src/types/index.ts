@@ -25,3 +25,10 @@ export interface IMainTitle extends IClassName {
 export interface IChartCardWrapper extends IClassName {
   children: React.ReactNode;
 }
+
+// ! Pricing cards interface in fourth home section
+export interface IPricesCard extends IClassName {
+  name: string;
+  amountOfUsers: number;
+  price: number;
+}

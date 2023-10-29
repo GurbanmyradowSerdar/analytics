@@ -1,10 +1,9 @@
 import Header from "../../Header";
 import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
-import "../../../index.css";
 
 const FirstHomeSection = () => {
   return (
-    <div className="min-h-[900px] bg-primary-color first-section relative overflow-hidden">
+    <section className="min-h-[900px] bg-primary-color first-section relative overflow-hidden">
       <img
         src="/images/chart-1.png"
         alt="chart"
@@ -33,7 +32,7 @@ const FirstHomeSection = () => {
           </button>
         </div>
       </HorizontalLimiterWrapper>
-    </div>
+    </section>
   );
 };
 
