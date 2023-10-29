@@ -24,6 +24,7 @@ export interface IMainTitle extends IClassName {
 // ! charts card wrapper
 export interface IChartCardWrapper extends IClassName {
   children: React.ReactNode;
+  // direction: "fromRight" | "fromLeft";
 }
 
 // ! Pricing cards interface in fourth home section

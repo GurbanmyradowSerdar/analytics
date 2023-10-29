@@ -1,9 +1,21 @@
 import { IPricesCard } from "../../../types";
 import MainTitle from "./MainTitle";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 const PricingCard = ({ amountOfUsers, name, price }: IPricesCard) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <div className="flex flex-col bg-[#11214E] px-14 py-12 rounded-3xl gap-12 flex-[0_1_25%] group hover:bg-white transition-all duration-300 hover:scale-[1.02] shadow-xl">
+    <motion.div
+      ref={ref}
+      style={{
+        transition: "all 0.3s ease-in-out",
+        translateY: isInView ? "0px" : "20px",
+        opacity: isInView ? 1 : 0,
+      }}
+      className="flex flex-col bg-[#11214E] px-14 py-12 rounded-3xl gap-12 flex-[0_1_25%] group hover:bg-white transition-all duration-300 hover:scale-[1.02] shadow-xl"
+    >
       <div className="flex flex-col text-center">
         <MainTitle
           text={name}
@@ -25,7 +37,7 @@ const PricingCard = ({ amountOfUsers, name, price }: IPricesCard) => {
       <button className="bg-transparent rounded-full px-20 py-4 border text-white border-[#2A407C] transition-colors duration-300 group-hover:bg-secondary-color group-hover:border-secondary-color">
         Order
       </button>
-    </div>
+    </motion.div>
   );
 };
 

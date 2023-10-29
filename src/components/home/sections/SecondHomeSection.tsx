@@ -1,5 +1,7 @@
 import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
 import MainTitle from "../components/MainTitle";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const cards = [
   {
@@ -39,14 +41,12 @@ const SecondHomeSection = () => {
         <div className="flex gap-32">
           {cards.map((item, i) => {
             return (
-              <div
+              <AnimatedCard
+                image={item.image}
+                text={item.text}
+                title={item.title}
                 key={i}
-                className="flex flex-col items-center gap-6 flex-[1_1_0px] text-center"
-              >
-                <img src={item.image} alt={item.title} className="w-14 h-14" />
-                <h4 className="font-bold text-text-main-color">{item.title}</h4>
-                <p>{item.text}</p>
-              </div>
+              />
             );
           })}
         </div>
@@ -56,3 +56,23 @@ const SecondHomeSection = () => {
 };
 
 export default SecondHomeSection;
+
+function AnimatedCard(item: { image: string; title: string; text: string }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  return (
+    <motion.div
+      ref={ref}
+      style={{
+        transition: "all 0.8s ease-in-out",
+        translateY: isInView ? "0px" : "20px",
+        opacity: isInView ? 1 : 0,
+      }}
+      className="flex flex-col items-center gap-6 flex-[1_1_0px] text-center"
+    >
+      <img src={item.image} alt={item.title} className="w-14 h-14" />
+      <h4 className="font-bold text-text-main-color">{item.title}</h4>
+      <p>{item.text}</p>
+    </motion.div>
+  );
+}

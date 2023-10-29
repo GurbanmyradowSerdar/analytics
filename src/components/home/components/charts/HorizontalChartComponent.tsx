@@ -56,7 +56,15 @@ const option2 = [
 const HorizontalChartComponent = ({ className }: IClassName) => {
   return (
     <ChartCardWrapper className={`${className}`}>
-      <VictoryChart horizontal domainPadding={10}>
+      <VictoryChart
+        horizontal
+        domainPadding={10}
+        animate={{
+          onLoad: {
+            duration: 1000,
+          },
+        }}
+      >
         <VictoryAxis
           tickValues={option1.map((item) => item.x)}
           tickFormat={["18-24", "25-34", "35-44", "45-54", "54-65"]}
