@@ -11,12 +11,12 @@ const Header = ({ className }: IHeader) => {
           <img
             src="./icons/logo/logo.svg"
             alt="logo"
-            className="w-full h-full object-contain max-lg:w-5 max-xl:w-8"
+            className="w-full h-full object-contain max-lg:w-5 max-xl:w-8 max-2xl:w-10"
           />
           <img
             src="./icons/logo/logo-text.svg"
             alt="logo"
-            className="w-full h-full object-contain max-lg:w-24 max-xl:w-28"
+            className="w-full h-full object-contain max-lg:w-24 max-xl:w-28 max-2xl:w-28"
           />
         </a>
         <nav className="flex items-center gap-9 max-lg:gap-4 max-xl:gap-6">

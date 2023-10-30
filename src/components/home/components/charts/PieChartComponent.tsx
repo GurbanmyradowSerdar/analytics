@@ -92,7 +92,7 @@ function PieChartComponent({ className }: IClassName) {
           return (
             <div key={i} className="flex flex-col gap-[2px]">
               <p
-                className="text-4xl max-lg:text-2xl max-xl:text-3xl"
+                className="text-3xl max-lg:text-2xl"
                 style={{ color: item.labelColor }}
               >
                 {`${item.y}%`}

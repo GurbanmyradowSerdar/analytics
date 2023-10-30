@@ -33,7 +33,7 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
             windowWidth,
             "30vw",
             "25vw",
-            "25vw"
+            "20vw"
           ),
           objectFit: "contain",
           zIndex: 10,
@@ -61,7 +61,7 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
             windowWidth,
             "60vw",
             "55vw",
-            "55vw"
+            "50vw"
           ),
           objectFit: "contain",
           transition: "all 1s ease-in-out",
@@ -70,7 +70,7 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
         alt="chart"
       />
 
-      <HorizontalLimiterWrapper className="flex flex-col gap-40 max-lg:gap-32 max-xl:gap-36">
+      <HorizontalLimiterWrapper className="flex flex-col gap-40 max-lg:gap-32 max-xl:gap-36 max-2xl:gap-28">
         {children}
         <div className="flex flex-col items-start gap-12 max-w-lg max-lg:gap-8 max-lg:max-w-xs max-xl:max-w-sm">
           <div className="flex flex-col gap-4">

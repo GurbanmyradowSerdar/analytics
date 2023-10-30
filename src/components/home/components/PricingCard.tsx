@@ -15,7 +15,7 @@ const PricingCard = ({ amountOfUsers, name, price }: IPricesCard) => {
         opacity: isInView ? 1 : 0,
       }}
       className="flex flex-col bg-[#11214E] px-14 py-12 rounded-3xl gap-12 flex-[0_1_25%] group hover:bg-white transition-all duration-300 hover:scale-[1.02] shadow-xl
-      max-lg:gap-7"
+      max-lg:gap-7 max-xl:px-8 max-xl:py-7"
     >
       <div className="flex flex-col text-center">
         <MainTitle
@@ -40,7 +40,7 @@ const PricingCard = ({ amountOfUsers, name, price }: IPricesCard) => {
       </div>
       <button
         className="bg-transparent rounded-full px-20 py-4 border text-white border-[#2A407C] transition-colors duration-300 group-hover:bg-secondary-color group-hover:border-secondary-color
-      max-lg:text-sm max-lg:px-12 max-lg:py-2"
+      max-lg:text-sm max-lg:px-12 max-lg:py-2 max-xl:px-16 max-xl:py-3"
       >
         Order
       </button>

@@ -26,7 +26,7 @@ const cards = [
 
 const ThirdHomeSection = () => {
   return (
-    <section className="bg-[#F8F9FF] third-section pb-96 overflow-hidden max-lg:pb-52 max-xl:pb-72">
+    <section className="bg-[#F8F9FF] third-section pb-96 overflow-hidden max-lg:pb-52 max-xl:pb-72 max-2xl:pb-80">
       <HorizontalLimiterWrapper className="flex flex-col pt-32 pb-20 gap-28 max-lg:pt-24 max-lg:gap-20 max-xl:pt-28 max-xl:gap-24">
         {cards.map((item, i) => {
           const ref = useRef(null);
@@ -44,7 +44,7 @@ const ThirdHomeSection = () => {
                   opacity: isInView ? 1 : 0,
                   transition: "all 1s ease-in-out",
                 }}
-                className="flex flex-col flex-[1_1_50%] max-w-lg gap-5 max-lg:max-w-xs max-xl:max-w-md"
+                className="flex flex-col flex-[1_1_50%] max-w-lg gap-5 max-lg:max-w-xs max-xl:max-w-md max-2xl:max-w-md"
               >
                 <MainTitle text={item.title} />
                 <p className="text-lg max-lg:text-base">{item.text}</p>
@@ -59,7 +59,7 @@ const ThirdHomeSection = () => {
                   opacity: isInView ? 1 : 0,
                   transition: "all 1s ease-in-out",
                 }}
-                className="flex flex-col flex-[1_1_50%] max-w-lg gap-5 max-lg:max-w-xs max-xl:max-w-md"
+                className="flex flex-col flex-[1_1_50%] max-w-lg gap-5 max-lg:max-w-xs max-xl:max-w-md max-2xl:max-w-md"
               >
                 <MainTitle text={item.title} />
                 <p className="text-lg max-lg:text-base">{item.text}</p>
