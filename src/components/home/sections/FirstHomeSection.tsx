@@ -12,7 +12,7 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
     once: true,
   });
   return (
-    <section className="min-h-[900px] bg-primary-color first-section relative overflow-hidden">
+    <section className="min-h-screen bg-primary-color first-section relative overflow-hidden">
       <motion.img
         ref={ref}
         style={{

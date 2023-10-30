@@ -27,3 +27,5 @@ function App() {
 }
 
 export default App;
+
+// ! responsive of lg and xl; lg = 1024; xl = 1280
