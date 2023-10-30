@@ -1,9 +1,9 @@
 import { createContext } from "react";
 import Footer from "./components/Footer";
-import FirstHomeSection from "./components/home/sections/FirstHomeSection";
-import SecondHomeSection from "./components/home/sections/SecondHomeSection";
-import ThirdHomeSection from "./components/home/sections/ThirdHomeSection";
-import FourthHomeSection from "./components/home/sections/FourthHomeSection";
+import FirstHomeSection from "./components/home/sections/first/FirstHomeSection";
+import SecondHomeSection from "./components/home/sections/second/SecondHomeSection";
+import ThirdHomeSection from "./components/home/sections/third/ThirdHomeSection";
+import FourthHomeSection from "./components/home/sections/fourth/FourthHomeSection";
 import Header from "./components/Header";
 
 const navItems: string[] = ["Product", "Pricing Plans", "FAQ", "Blog"];

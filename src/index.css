@@ -2,25 +2,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.first-section {
-  background-image: url(./icons/bg-line.svg), url(./icons/bg-icon.svg),
-    url(./icons/bg-icon-big.svg);
-  background-repeat: no-repeat;
-  background-position: bottom, -10vw -34vh, 30vw 0vh;
-  background-size: contain, 45vw auto, 90vw auto;
-}
-
-.third-section {
-  background-image: url(./icons/bg-line-1.svg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
-}
-
-.fourth-section {
-  background-image: url(./icons/bg-icon-big.svg);
-  background-repeat: no-repeat;
-  background-position: -900% -5%;
-  background-size: 2000px;
-}

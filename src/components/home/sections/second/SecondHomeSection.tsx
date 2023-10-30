@@ -1,5 +1,5 @@
-import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
-import MainTitle from "../components/MainTitle";
+import HorizontalLimiterWrapper from "../../../HorizontalLimiterWrapper";
+import MainTitle from "../../components/MainTitle";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
