@@ -23,11 +23,11 @@ const cards = [
 
 const SecondHomeSection = () => {
   return (
-    <section className="bg-[#F8F9FF] pt-20 max-lg:pt-14">
-      <HorizontalLimiterWrapper className="flex flex-col gap-20 max-lg:gap-12">
-        <div className="flex flex-col items-center gap-7 text-center max-lg:gap-5">
+    <section className="bg-[#F8F9FF] pt-20 max-lg:pt-14 max-xl:pt-16">
+      <HorizontalLimiterWrapper className="flex flex-col gap-20 max-lg:gap-12 max-xl:gap-16">
+        <div className="flex flex-col items-center gap-7 text-center max-lg:gap-5 max-xl:gap-7">
           <MainTitle text="Main Features" />
-          <p className="max-lg:text-sm max-lg:line-clamp-2">
+          <p className="line-clamp-2 max-lg:text-sm">
             An analytics company offers a range of services and solutions
             designed to help businesses gain valuable insights from their data.
             These companies specialize in collecting, analyzing, and
@@ -38,7 +38,7 @@ const SecondHomeSection = () => {
             external databases.
           </p>
         </div>
-        <div className="flex gap-32">
+        <div className="flex gap-32 max-lg:gap-20 max-xl:gap-28">
           {cards.map((item, i) => {
             return (
               <AnimatedCard
@@ -73,7 +73,7 @@ function AnimatedCard(item: { image: string; title: string; text: string }) {
       <img
         src={item.image}
         alt={item.title}
-        className="w-14 h-14 max-lg:w-10 max-lg:h-10"
+        className="w-14 h-14 max-lg:w-10 max-lg:h-10 max-xl:w-12 max-xl:h-12"
       />
       <h4 className="font-bold text-text-main-color max-lg:text-sm">
         {item.title}

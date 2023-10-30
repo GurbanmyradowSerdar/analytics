@@ -28,4 +28,4 @@ function App() {
 
 export default App;
 
-// ! responsive of lg and xl; lg = 1024; xl = 1280
+// ! responsive of lg, xl and 2xl; lg = 1024; xl = 1280; 2xl = 1536;

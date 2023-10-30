@@ -1,8 +1,11 @@
 import { useRef } from "react";
 import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
 import { motion, useInView } from "framer-motion";
+import { calculatingResponsiveSize } from "../../../utils";
+import useWindowWidth from "../../../utils/useWindowWidth";
 
 const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
+  const windowWidth = useWindowWidth();
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
@@ -18,8 +21,20 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
         style={{
           position: "absolute",
           top: "38vh",
-          right: isInView ? "30vw" : "-10vw",
-          width: "30vw",
+          right: isInView
+            ? calculatingResponsiveSize<string>(
+                windowWidth,
+                "30vw",
+                "28vw",
+                "28vw"
+              )
+            : "-10vw",
+          width: calculatingResponsiveSize<string>(
+            windowWidth,
+            "30vw",
+            "25vw",
+            "25vw"
+          ),
           objectFit: "contain",
           zIndex: 10,
           opacity: isInView ? 1 : 0,
@@ -33,9 +48,21 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
         style={{
           position: "absolute",
           top: "21vh",
-          right: isInView1 ? "-8%" : "2%",
+          right: isInView1
+            ? calculatingResponsiveSize<string>(
+                windowWidth,
+                "-8vw",
+                "-10vw",
+                "-10vw"
+              )
+            : "2vw",
           opacity: isInView1 ? 1 : 0,
-          width: "60vw",
+          width: calculatingResponsiveSize<string>(
+            windowWidth,
+            "60vw",
+            "55vw",
+            "55vw"
+          ),
           objectFit: "contain",
           transition: "all 1s ease-in-out",
         }}
@@ -43,21 +70,21 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
         alt="chart"
       />
 
-      <HorizontalLimiterWrapper className="flex flex-col gap-40 max-lg:gap-32">
+      <HorizontalLimiterWrapper className="flex flex-col gap-40 max-lg:gap-32 max-xl:gap-36">
         {children}
-        <div className="flex flex-col items-start gap-12 max-w-lg max-lg:gap-8 max-lg:max-w-xs">
+        <div className="flex flex-col items-start gap-12 max-w-lg max-lg:gap-8 max-lg:max-w-xs max-xl:max-w-sm">
           <div className="flex flex-col gap-4">
-            <h1 className="text-white text-5xl leading-[60px] font-bold max-lg:text-3xl">
+            <h1 className="text-white text-5xl leading-[60px] font-bold max-lg:text-3xl max-xl:text-4xl">
               Monitor your business on real-time dashboard
             </h1>
-            <h4 className="text-lg max-lg:text-sm">
+            <h4 className="text-lg max-lg:text-sm max-xl:text-base">
               Monitoring your business on a real-time dashboard is an essential
               practice for any successful entrepreneur or business owner.
             </h4>
           </div>
           <button
             className="bg-secondary-color px-20 py-4 rounded-full text-white transition-all duration-300 shadow-2xl shadow-secondary-color/30 hover:bg-secondary-color/90
-          max-lg:text-sm max-lg:px-10 max-lg:py-2"
+          max-lg:text-sm max-lg:px-10 max-lg:py-2 max-xl:text-base max-xl:px-16 max-xl:py-3"
           >
             Try for free
           </button>

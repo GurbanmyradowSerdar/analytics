@@ -8,6 +8,7 @@ import {
   VictoryLabel,
 } from "victory";
 import { calculatingResponsiveSize } from "../../../../utils";
+import useWindowWidth from "../../../../utils/useWindowWidth";
 
 const option1 = [
   {
@@ -55,6 +56,7 @@ const option2 = [
 ];
 
 const HorizontalChartComponent = ({ className }: IClassName) => {
+  const windowWidth = useWindowWidth();
   return (
     <ChartCardWrapper className={`${className}`}>
       <VictoryChart
@@ -74,6 +76,7 @@ const HorizontalChartComponent = ({ className }: IClassName) => {
               style={{
                 fontFamily: "Roboto",
                 fontSize: calculatingResponsiveSize<string>(
+                  windowWidth,
                   "14px",
                   "16px",
                   "16px"

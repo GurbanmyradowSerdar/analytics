@@ -2,6 +2,7 @@ import { IClassName } from "../../../../types";
 import { VictoryPie, CallbackArgs } from "victory";
 import ChartCardWrapper from "./ChartCardWrapper";
 import { calculatingResponsiveSize } from "../../../../utils";
+import useWindowWidth from "../../../../utils/useWindowWidth";
 
 const pieData = [
   {
@@ -25,6 +26,7 @@ const pieData = [
 ];
 
 function PieChartComponent({ className }: IClassName) {
+  const windowWidth = useWindowWidth();
   return (
     <ChartCardWrapper className={`${className} gap-28 flex items-center`}>
       <VictoryPie
@@ -41,13 +43,18 @@ function PieChartComponent({ className }: IClassName) {
             fill: (args: CallbackArgs) => args.datum.labelColor,
             fontFamily: "Roboto",
             fontWeight: 700,
-            fontSize: calculatingResponsiveSize<string>("30px", "20px", "20px"),
+            fontSize: calculatingResponsiveSize<string>(
+              windowWidth,
+              "30px",
+              "30px",
+              "30px"
+            ),
             opacity: 0,
             transitionProperty: "all",
             transitionDuration: "300ms",
           },
         }}
-        width={calculatingResponsiveSize<number>(550, 470, 470)}
+        width={calculatingResponsiveSize<number>(windowWidth, 550, 520, 520)}
         events={[
           {
             target: "data",
@@ -85,7 +92,7 @@ function PieChartComponent({ className }: IClassName) {
           return (
             <div key={i} className="flex flex-col gap-[2px]">
               <p
-                className="text-4xl max-lg:text-2xl"
+                className="text-4xl max-lg:text-2xl max-xl:text-3xl"
                 style={{ color: item.labelColor }}
               >
                 {`${item.y}%`}
