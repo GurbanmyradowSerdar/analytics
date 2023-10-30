@@ -1,7 +1,6 @@
 import { useRef } from "react";
-import HorizontalLimiterWrapper from "../../../HorizontalLimiterWrapper";
+import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
 import { motion, useInView } from "framer-motion";
-import "./style.css";
 
 const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
   const ref = useRef(null);

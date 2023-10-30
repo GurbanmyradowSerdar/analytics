@@ -1,8 +1,7 @@
-import { IPricesCard } from "../../../../types";
-import HorizontalLimiterWrapper from "../../../HorizontalLimiterWrapper";
-import MainTitle from "../../components/MainTitle";
-import PricingCard from "../../components/PricingCard";
-import "./style.css";
+import { IPricesCard } from "../../../types";
+import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
+import MainTitle from "../components/MainTitle";
+import PricingCard from "../components/PricingCard";
 
 const cards: IPricesCard[] = [
   {

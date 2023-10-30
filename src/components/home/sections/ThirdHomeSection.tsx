@@ -1,11 +1,10 @@
-import HorizontalLimiterWrapper from "../../../HorizontalLimiterWrapper";
-import MainTitle from "../../components/MainTitle";
-import CalendarComponent from "../../components/charts/CalendarComponent";
-import HorizontalChartComponent from "../../components/charts/HorizontalChartComponent";
-import PieChartComponent from "../../components/charts/PieChartComponent";
+import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
+import MainTitle from "../components/MainTitle";
+import CalendarComponent from "../components/charts/CalendarComponent";
+import HorizontalChartComponent from "../components/charts/HorizontalChartComponent";
+import PieChartComponent from "../components/charts/PieChartComponent";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import "./style.css";
 
 const cards = [
   {
