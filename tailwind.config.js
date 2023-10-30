@@ -16,6 +16,9 @@ export default {
         "primary-color": "#172755",
         "secondary-color": "#EF2A82",
       },
+      screens: {
+        lg: "1025px",
+      },
     },
   },
   plugins: [],

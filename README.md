@@ -1,1 +1,1 @@
-# React + TypeScript + Vite
+Landing page of Analytics company (Available on laptop and pc)

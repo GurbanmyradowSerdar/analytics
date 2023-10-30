@@ -23,11 +23,11 @@ const cards = [
 
 const SecondHomeSection = () => {
   return (
-    <section className="bg-[#F8F9FF] pt-20">
-      <HorizontalLimiterWrapper className="flex flex-col gap-20">
-        <div className="flex flex-col items-center gap-7 text-center">
+    <section className="bg-[#F8F9FF] pt-20 max-lg:pt-14">
+      <HorizontalLimiterWrapper className="flex flex-col gap-20 max-lg:gap-12">
+        <div className="flex flex-col items-center gap-7 text-center max-lg:gap-5">
           <MainTitle text="Main Features" />
-          <p>
+          <p className="max-lg:text-sm max-lg:line-clamp-2">
             An analytics company offers a range of services and solutions
             designed to help businesses gain valuable insights from their data.
             These companies specialize in collecting, analyzing, and
@@ -68,11 +68,17 @@ function AnimatedCard(item: { image: string; title: string; text: string }) {
         translateY: isInView ? "0px" : "20px",
         opacity: isInView ? 1 : 0,
       }}
-      className="flex flex-col items-center gap-6 flex-[1_1_0px] text-center"
+      className="flex flex-col items-center gap-6 flex-[1_1_0px] text-center max-lg:gap-4"
     >
-      <img src={item.image} alt={item.title} className="w-14 h-14" />
-      <h4 className="font-bold text-text-main-color">{item.title}</h4>
-      <p>{item.text}</p>
+      <img
+        src={item.image}
+        alt={item.title}
+        className="w-14 h-14 max-lg:w-10 max-lg:h-10"
+      />
+      <h4 className="font-bold text-text-main-color max-lg:text-sm">
+        {item.title}
+      </h4>
+      <p className="max-lg:text-sm">{item.text}</p>
     </motion.div>
   );
 }

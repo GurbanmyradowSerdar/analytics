@@ -7,6 +7,7 @@ import {
   VictoryAxis,
   VictoryLabel,
 } from "victory";
+import { calculatingResponsiveSize } from "../../../../utils";
 
 const option1 = [
   {
@@ -72,7 +73,11 @@ const HorizontalChartComponent = ({ className }: IClassName) => {
             <VictoryLabel
               style={{
                 fontFamily: "Roboto",
-                fontSize: "14px",
+                fontSize: calculatingResponsiveSize<string>(
+                  "14px",
+                  "16px",
+                  "16px"
+                ),
               }}
             />
           }

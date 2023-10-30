@@ -17,9 +17,9 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
         ref={ref}
         style={{
           position: "absolute",
-          top: "32%",
-          right: isInView ? "30%" : "-10%",
-          width: "500px",
+          top: "38vh",
+          right: isInView ? "30vw" : "-10vw",
+          width: "30vw",
           objectFit: "contain",
           zIndex: 10,
           opacity: isInView ? 1 : 0,
@@ -32,10 +32,10 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
         ref={ref1}
         style={{
           position: "absolute",
-          top: "15%",
+          top: "21vh",
           right: isInView1 ? "-8%" : "2%",
           opacity: isInView1 ? 1 : 0,
-          width: "1100px",
+          width: "60vw",
           objectFit: "contain",
           transition: "all 1s ease-in-out",
         }}
@@ -43,19 +43,22 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
         alt="chart"
       />
 
-      <HorizontalLimiterWrapper className="flex flex-col gap-40">
+      <HorizontalLimiterWrapper className="flex flex-col gap-40 max-lg:gap-32">
         {children}
-        <div className="flex flex-col items-start gap-12 max-w-lg">
+        <div className="flex flex-col items-start gap-12 max-w-lg max-lg:gap-8 max-lg:max-w-xs">
           <div className="flex flex-col gap-4">
-            <h1 className="text-white text-5xl leading-[60px] font-bold">
+            <h1 className="text-white text-5xl leading-[60px] font-bold max-lg:text-3xl">
               Monitor your business on real-time dashboard
             </h1>
-            <h4 className="text-lg">
+            <h4 className="text-lg max-lg:text-sm">
               Monitoring your business on a real-time dashboard is an essential
               practice for any successful entrepreneur or business owner.
             </h4>
           </div>
-          <button className="bg-secondary-color px-20 py-4 rounded-full text-white transition-all duration-300 shadow-2xl shadow-secondary-color/30 hover:bg-secondary-color/90">
+          <button
+            className="bg-secondary-color px-20 py-4 rounded-full text-white transition-all duration-300 shadow-2xl shadow-secondary-color/30 hover:bg-secondary-color/90
+          max-lg:text-sm max-lg:px-10 max-lg:py-2"
+          >
             Try for free
           </button>
         </div>
