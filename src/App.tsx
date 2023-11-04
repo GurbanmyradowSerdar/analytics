@@ -11,7 +11,7 @@ const navItems: string[] = ["Product", "Pricing Plans", "FAQ", "Blog"];
 export const AppContext = createContext<string[]>(navItems);
 
 function App() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth] = useState(window.innerWidth);
 
   return windowWidth <= 1020 ? (
     <MobilePage />
