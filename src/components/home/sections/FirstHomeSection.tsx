@@ -40,7 +40,7 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
           opacity: isInView ? 1 : 0,
           transition: "all 1s ease-in-out",
         }}
-        src="/images/chart-1.png"
+        src="images/chart-1.webp"
         alt="chart"
       />
       <motion.img
@@ -66,7 +66,7 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
           objectFit: "contain",
           transition: "all 1s ease-in-out",
         }}
-        src="/images/chart-2.png"
+        src="images/chart-2.webp"
         alt="chart"
       />
 
