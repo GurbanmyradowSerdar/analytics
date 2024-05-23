@@ -8,7 +8,7 @@ import {
   VictoryLabel,
 } from "victory";
 import { calculatingResponsiveSize } from "../../../../utils";
-import useWindowWidth from "../../../../utils/useWindowWidth";
+import useWindowWidth from "../../../../hooks/useWindowWidth";
 
 const option1 = [
   {

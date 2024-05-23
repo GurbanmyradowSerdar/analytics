@@ -9,6 +9,7 @@ export default defineConfig({
       { find: "components", replacement: "/src/components" },
       { find: "hooks", replacement: "/src/hooks" },
       { find: "utils", replacement: "/src/utils" },
+      { find: "data", replacement: "/src/data/index.ts" },
       { find: "types", replacement: "/src/types/index.ts" },
       { find: "icons", replacement: "/public/icons" },
       { find: "images", replacement: "/public/images" },

@@ -2,7 +2,7 @@ import { IClassName } from "../../../../types";
 import { VictoryPie, CallbackArgs } from "victory";
 import ChartCardWrapper from "./ChartCardWrapper";
 import { calculatingResponsiveSize } from "../../../../utils";
-import useWindowWidth from "../../../../utils/useWindowWidth";
+import useWindowWidth from "../../../../hooks/useWindowWidth";
 
 const pieData = [
   {

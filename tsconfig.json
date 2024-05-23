@@ -23,6 +23,7 @@
     "paths": {
       "components/*": ["src/components/*"],
       "hooks/*": ["src/hooks/*"],
+      "data": ["src/data/index.ts"],
       "types": ["src/types/index.ts"],
       "icons/*": ["public/icons/*"],
       "images/*": ["public/images/*"],

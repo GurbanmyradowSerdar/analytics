@@ -4,14 +4,14 @@ const useWindowWidth = (): number => {
   const [width, setWidth] = useState<number>(window.innerWidth);
 
   useEffect(() => {
-    window.addEventListener("resize", () => {
+    const handleResize = () => {
       setWidth(window.innerWidth);
-    });
+    };
+
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", () => {
-        console.log("resize finished");
-      });
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 

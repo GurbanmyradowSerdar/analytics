@@ -1,30 +1,11 @@
 import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
 import MainTitle from "../components/MainTitle";
-import CalendarComponent from "../components/charts/CalendarComponent";
-import HorizontalChartComponent from "../components/charts/HorizontalChartComponent";
-import PieChartComponent from "../components/charts/PieChartComponent";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-
-const cards = [
-  {
-    title: "Automated Reports & Widget Alerts",
-    text: "Automated reports are a feature offered by analytics companies that allow businesses to generate and distribute reports automatically. These reports can provide insights on key metrics, performance indicators, and trends.",
-    chart: PieChartComponent,
-  },
-  {
-    title: "Fully customizable to address your needs",
-    text: "A fully customizable solution is designed to adapt and cater to the unique needs and requirements of a business or individual. It allows users to tailor the features, functionalities, and appearance of the solution according to their specific preferences.",
-    chart: HorizontalChartComponent,
-  },
-  {
-    title: "Pre-built Dashboard Templates",
-    text: "Pre-built dashboard templates are pre-designed and pre-configured dashboard layouts offered by analytics companies or software providers. These templates serve as a starting point for creating data visualizations and monitoring key metrics.",
-    chart: CalendarComponent,
-  },
-];
+import data from "data";
 
 const ThirdHomeSection = () => {
+  const { chartCards: cards } = data;
   return (
     <section className="bg-[#F8F9FF] third-section pb-96 overflow-hidden max-lg:pb-52 max-xl:pb-72 max-2xl:pb-80">
       <HorizontalLimiterWrapper className="flex flex-col pt-32 pb-20 gap-28 max-lg:pt-24 max-lg:gap-20 max-xl:pt-28 max-xl:gap-24">

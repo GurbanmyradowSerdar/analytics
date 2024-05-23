@@ -1,11 +1,11 @@
-import { useContext } from "react";
-import { AppContext } from "../App";
 import { IHeader } from "../types";
 import LogoIcon from "icons/logo/logo.svg";
 import LogoTextIcon from "icons/logo/logo-text.svg";
+import data from "data";
 
 const Header = ({ className }: IHeader) => {
-  const navItems = useContext(AppContext);
+  const { navItems } = data;
+
   return (
     <header className={`${className} flex items-center justify-between pt-12`}>
       <div className="flex items-center gap-36 max-lg:gap-20 max-xl:gap-28">

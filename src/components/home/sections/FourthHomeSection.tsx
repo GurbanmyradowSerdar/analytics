@@ -1,27 +1,10 @@
-import { IPricesCard } from "../../../types";
+import data from "data";
 import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
 import MainTitle from "../components/MainTitle";
 import PricingCard from "../components/PricingCard";
 
-const cards: IPricesCard[] = [
-  {
-    name: "Starter",
-    amountOfUsers: 3,
-    price: 29,
-  },
-  {
-    name: "Standard",
-    amountOfUsers: 20,
-    price: 99,
-  },
-  {
-    name: "Premium",
-    amountOfUsers: 200,
-    price: 299,
-  },
-];
-
 const FourthHomeSection = ({ children }: { children: React.ReactNode }) => {
+  const { priceCards: cards } = data;
   return (
     <section className="bg-primary-color fourth-section pt-20 max-lg:pt-12">
       <HorizontalLimiterWrapper className="flex flex-col gap-20 max-lg:gap-12">

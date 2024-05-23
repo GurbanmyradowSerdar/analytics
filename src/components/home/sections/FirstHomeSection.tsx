@@ -2,7 +2,7 @@ import { useRef } from "react";
 import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
 import { motion, useInView } from "framer-motion";
 import { calculatingResponsiveSize } from "../../../utils";
-import useWindowWidth from "../../../utils/useWindowWidth";
+import useWindowWidth from "../../../hooks/useWindowWidth";
 import ChartImage from "images/chart-1.webp";
 import ChartImage1 from "images/chart-2.webp";
 
@@ -16,6 +16,7 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
   const isInView1 = useInView(ref1, {
     once: true,
   });
+
   return (
     <section className="min-h-screen bg-primary-color first-section relative overflow-hidden">
       <motion.img

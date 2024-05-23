@@ -1,14 +1,12 @@
-import { IFooter } from "../types";
+import { IClassName } from "../types";
 import HorizontalLimiterWrapper from "./HorizontalLimiterWrapper";
-import FacebookIcon from "icons/social_medias/facebook.svg";
-import TwitterIcon from "icons/social_medias/twitter.svg";
-import InstagramIcon from "icons/social_medias/instagram.svg";
 import LogoGrayIcon from "icons/logo/logo-gray.svg";
 import LogoTextGrayIcon from "icons/logo/logo-text-gray.svg";
+import data from "data";
 
-const socialMediaItems: string[] = [FacebookIcon, TwitterIcon, InstagramIcon];
-
-const Footer = ({ navItems, className }: IFooter) => {
+const Footer = ({ className }: IClassName) => {
+  const { socialMediaIcons } = data;
+  const { navItems } = data;
   return (
     <footer className={`${className}`}>
       <HorizontalLimiterWrapper className="pb-24 pt-3 mt-24 flex flex-col gap-14 max-lg:gap-10 max-lg:pb-20 max-lg:mt-20">
@@ -40,7 +38,7 @@ const Footer = ({ navItems, className }: IFooter) => {
             })}
           </nav>
           <div className="flex items-center gap-10 max-lg:gap-6">
-            {socialMediaItems.map((item, i) => {
+            {socialMediaIcons.map((item, i) => {
               return (
                 <a
                   href="#"

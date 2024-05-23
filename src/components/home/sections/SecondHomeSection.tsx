@@ -2,29 +2,10 @@ import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
 import MainTitle from "../components/MainTitle";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import TimeIcon from "icons/sections/features/time.svg";
-import ComputerIcon from "icons/sections/features/computer.svg";
-import RocketIcon from "icons/sections/features/rocket.svg";
-
-const cards = [
-  {
-    title: "Monitoring 24/7",
-    text: "Monitoring 24/7 is a crucial feature provided by analytics companies to ensure constant surveillance of business operations.",
-    image: TimeIcon,
-  },
-  {
-    title: "Widget System",
-    text: "A widget system is a framework or platform that allows users to easily add and customize small, self-contained applications.",
-    image: ComputerIcon,
-  },
-  {
-    title: "Best Performance",
-    text: "Best performance refers to achieving optimal results and efficiency in various aspects of a business or system.",
-    image: RocketIcon,
-  },
-];
+import data from "data";
 
 const SecondHomeSection = () => {
+  const { sectionsCards: cards } = data;
   return (
     <section className="bg-[#F8F9FF] pt-20 max-lg:pt-14 max-xl:pt-16">
       <HorizontalLimiterWrapper className="flex flex-col gap-20 max-lg:gap-12 max-xl:gap-16">
@@ -63,6 +44,7 @@ export default SecondHomeSection;
 function AnimatedCard(item: { image: string; title: string; text: string }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+
   return (
     <motion.div
       ref={ref}
