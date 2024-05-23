@@ -1,4 +1,4 @@
-import { IChartCardWrapper } from "../../../../types";
+import { IChartCardWrapper } from "../../../types";
 
 const ChartCardWrapper = ({ children, className }: IChartCardWrapper) => {
   return (

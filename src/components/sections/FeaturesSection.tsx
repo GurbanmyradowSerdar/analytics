@@ -1,16 +1,16 @@
-import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
-import MainTitle from "../components/MainTitle";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import data from "data";
+import Title from "components/shared/Title";
+import HorizontalLimiterWrapper from "components/shared/HorizontalLimiterWrapper";
 
-const SecondHomeSection = () => {
+const FeaturesSection = () => {
   const { sectionsCards: cards } = data;
   return (
     <section className="bg-[#F8F9FF] pt-20 max-lg:pt-14 max-xl:pt-16">
       <HorizontalLimiterWrapper className="flex flex-col gap-20 max-lg:gap-12 max-xl:gap-16">
         <div className="flex flex-col items-center gap-7 text-center max-lg:gap-5 max-xl:gap-7">
-          <MainTitle text="Main Features" />
+          <Title text="Main Features" />
           <p className="line-clamp-2 max-lg:text-sm">
             An analytics company offers a range of services and solutions
             designed to help businesses gain valuable insights from their data.
@@ -39,7 +39,7 @@ const SecondHomeSection = () => {
   );
 };
 
-export default SecondHomeSection;
+export default FeaturesSection;
 
 function AnimatedCard(item: { image: string; title: string; text: string }) {
   const ref = useRef(null);

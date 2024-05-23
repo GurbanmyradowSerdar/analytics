@@ -1,12 +1,12 @@
 import { useRef } from "react";
-import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
 import { motion, useInView } from "framer-motion";
-import { calculatingResponsiveSize } from "../../../utils";
-import useWindowWidth from "../../../hooks/useWindowWidth";
 import ChartImage from "images/chart-1.webp";
 import ChartImage1 from "images/chart-2.webp";
+import useWindowWidth from "hooks/useWindowWidth";
+import { calculatingResponsiveSize } from "src/utils";
+import HorizontalLimiterWrapper from "components/shared/HorizontalLimiterWrapper";
 
-const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
+const HeroSection = ({ children }: { children: React.ReactNode }) => {
   const windowWidth = useWindowWidth();
   const ref = useRef(null);
   const isInView = useInView(ref, {
@@ -97,4 +97,4 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default FirstHomeSection;
+export default HeroSection;

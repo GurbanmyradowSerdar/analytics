@@ -1,34 +1,9 @@
-// ! using tailwind css's classnames purposes
-export interface IClassName {
+export interface IClassNameProps {
   className?: string;
 }
 
-// ! footer
-export interface IFooter extends IClassName {
-  navItems: string[];
-}
+export interface IChildrenProps extends React.PropsWithChildren {}
 
-// ! header
-export interface IHeader extends IClassName {}
-
-// ! horizontal limiter wrapper
-export interface IHorizontalLimiterWrapper extends IClassName {
+export interface IChartCardWrapper extends IClassNameProps {
   children: React.ReactNode;
-}
-
-// ! main title component in home page
-export interface IMainTitle extends IClassName {
-  text: string;
-}
-
-// ! charts card wrapper
-export interface IChartCardWrapper extends IClassName {
-  children: React.ReactNode;
-}
-
-// ! Pricing cards interface in fourth home section
-export interface IPricesCard extends IClassName {
-  name: string;
-  amountOfUsers: number;
-  price: number;
 }

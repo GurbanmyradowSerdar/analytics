@@ -1,10 +1,10 @@
-import { IClassName } from "../types";
-import HorizontalLimiterWrapper from "./HorizontalLimiterWrapper";
 import LogoGrayIcon from "icons/logo/logo-gray.svg";
 import LogoTextGrayIcon from "icons/logo/logo-text-gray.svg";
 import data from "data";
+import { IClassNameProps } from "types";
+import HorizontalLimiterWrapper from "components/shared/HorizontalLimiterWrapper";
 
-const Footer = ({ className }: IClassName) => {
+const Footer = ({ className }: IClassNameProps) => {
   const { socialMediaIcons } = data;
   const { navItems } = data;
   return (

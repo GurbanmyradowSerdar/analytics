@@ -1,4 +1,4 @@
-import { IClassName } from "../../../../types";
+import { IClassNameProps } from "../../../types";
 import ChartCardWrapper from "./ChartCardWrapper";
 import {
   VictoryChart,
@@ -7,8 +7,8 @@ import {
   VictoryAxis,
   VictoryLabel,
 } from "victory";
-import { calculatingResponsiveSize } from "../../../../utils";
-import useWindowWidth from "../../../../hooks/useWindowWidth";
+import { calculatingResponsiveSize } from "../../../utils";
+import useWindowWidth from "../../../hooks/useWindowWidth";
 
 const option1 = [
   {
@@ -55,7 +55,7 @@ const option2 = [
   },
 ];
 
-const HorizontalChartComponent = ({ className }: IClassName) => {
+const HorizontalChartComponent = ({ className }: IClassNameProps) => {
   const windowWidth = useWindowWidth();
   return (
     <ChartCardWrapper className={`${className}`}>

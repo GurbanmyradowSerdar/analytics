@@ -1,8 +1,8 @@
-import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
-import MainTitle from "../components/MainTitle";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import data from "data";
+import Title from "components/shared/Title";
+import HorizontalLimiterWrapper from "components/shared/HorizontalLimiterWrapper";
 
 const ThirdHomeSection = () => {
   const { chartCards: cards } = data;
@@ -27,7 +27,7 @@ const ThirdHomeSection = () => {
                 }}
                 className="flex flex-col flex-[1_1_50%] max-w-lg gap-5 max-lg:max-w-xs max-xl:max-w-md max-2xl:max-w-md"
               >
-                <MainTitle text={item.title} />
+                <Title text={item.title} />
                 <p className="text-lg max-lg:text-base">{item.text}</p>
               </motion.div>
             </div>
@@ -42,7 +42,7 @@ const ThirdHomeSection = () => {
                 }}
                 className="flex flex-col flex-[1_1_50%] max-w-lg gap-5 max-lg:max-w-xs max-xl:max-w-md max-2xl:max-w-md"
               >
-                <MainTitle text={item.title} />
+                <Title text={item.title} />
                 <p className="text-lg max-lg:text-base">{item.text}</p>
               </motion.div>
               <item.chart className="flex-[0_1_50%]" />

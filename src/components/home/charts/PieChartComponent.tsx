@@ -1,8 +1,8 @@
-import { IClassName } from "../../../../types";
+import { IClassNameProps } from "../../../types";
 import { VictoryPie, CallbackArgs } from "victory";
 import ChartCardWrapper from "./ChartCardWrapper";
-import { calculatingResponsiveSize } from "../../../../utils";
-import useWindowWidth from "../../../../hooks/useWindowWidth";
+import { calculatingResponsiveSize } from "../../../utils";
+import useWindowWidth from "../../../hooks/useWindowWidth";
 
 const pieData = [
   {
@@ -25,7 +25,7 @@ const pieData = [
   },
 ];
 
-function PieChartComponent({ className }: IClassName) {
+function PieChartComponent({ className }: IClassNameProps) {
   const windowWidth = useWindowWidth();
   return (
     <ChartCardWrapper className={`${className} gap-28 flex items-center`}>

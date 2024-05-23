@@ -1,11 +1,11 @@
-import Footer from "./components/Footer";
-import FirstHomeSection from "./components/home/sections/FirstHomeSection";
-import SecondHomeSection from "./components/home/sections/SecondHomeSection";
-import ThirdHomeSection from "./components/home/sections/ThirdHomeSection";
-import FourthHomeSection from "./components/home/sections/FourthHomeSection";
-import Header from "./components/Header";
-import MobilePage from "./components/mobile";
 import useWindowWidth from "hooks/useWindowWidth";
+import Footer from "components/shared/Footer";
+import HeroSection from "components/sections/HeroSection";
+import FeaturesSection from "components/sections/FeaturesSection";
+import ThirdHomeSection from "components/sections/ThirdHomeSection";
+import Header from "components/shared/Header";
+import MobilePage from "components/mobile";
+import PricingSection from "components/sections/pricing-section";
 
 function App() {
   const windowWidth = useWindowWidth();
@@ -17,15 +17,15 @@ function App() {
   return (
     <div className="font-Roboto flex flex-col text-text-secondary-color min-h-screen">
       <main className="flex-grow">
-        <FirstHomeSection>
+        <HeroSection>
           <Header />
-        </FirstHomeSection>
-        <SecondHomeSection />
+        </HeroSection>
+        <FeaturesSection />
         <ThirdHomeSection />
       </main>
-      <FourthHomeSection>
+      <PricingSection>
         <Footer />
-      </FourthHomeSection>
+      </PricingSection>
     </div>
   );
 }

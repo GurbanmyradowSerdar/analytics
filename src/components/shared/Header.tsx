@@ -1,9 +1,9 @@
-import { IHeader } from "../types";
 import LogoIcon from "icons/logo/logo.svg";
 import LogoTextIcon from "icons/logo/logo-text.svg";
 import data from "data";
+import { IClassNameProps } from "types";
 
-const Header = ({ className }: IHeader) => {
+const Header = ({ className }: IClassNameProps) => {
   const { navItems } = data;
 
   return (

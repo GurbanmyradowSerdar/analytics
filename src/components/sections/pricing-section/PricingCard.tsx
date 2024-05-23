@@ -1,9 +1,15 @@
-import { IPricesCard } from "../../../types";
-import MainTitle from "./MainTitle";
+import Title from "components/shared/Title";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { IClassNameProps } from "types";
 
-const PricingCard = ({ amountOfUsers, name, price }: IPricesCard) => {
+interface IProps extends IClassNameProps {
+  name: string;
+  amountOfUsers: number;
+  price: number;
+}
+
+const PricingCard = ({ amountOfUsers, name, price }: IProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
@@ -18,7 +24,7 @@ const PricingCard = ({ amountOfUsers, name, price }: IPricesCard) => {
       max-lg:gap-7 max-xl:px-8 max-xl:py-7"
     >
       <div className="flex flex-col text-center">
-        <MainTitle
+        <Title
           text={name}
           className="text-3xl text-white group-hover:text-text-main-color transition-colors duration-300"
         />
@@ -31,7 +37,7 @@ const PricingCard = ({ amountOfUsers, name, price }: IPricesCard) => {
         max-lg:text-xl"
         >
           $
-          <MainTitle
+          <Title
             text={price.toString()}
             className="text-6xl text-white transition-colors duration-300 group-hover:text-text-main-color"
           />
