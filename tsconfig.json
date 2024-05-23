@@ -21,10 +21,12 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@src/types": ["src/types/index.ts"],
-      "@src/*": ["src/*"]
+      "components/*": ["src/components/*"],
+      "hooks/*": ["src/hooks/*"],
+      "types": ["src/types/index.ts"],
+      "icons/*": ["public/icons/*"],
+      "images/*": ["public/images/*"],
+      "src/*": ["src/*"]
     }
   },
   "include": ["src"],
