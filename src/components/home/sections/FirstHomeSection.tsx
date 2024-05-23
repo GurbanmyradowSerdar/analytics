@@ -3,6 +3,8 @@ import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
 import { motion, useInView } from "framer-motion";
 import { calculatingResponsiveSize } from "../../../utils";
 import useWindowWidth from "../../../utils/useWindowWidth";
+import ChartImage from "images/chart-1.webp";
+import ChartImage1 from "images/chart-2.webp";
 
 const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
   const windowWidth = useWindowWidth();
@@ -40,7 +42,7 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
           opacity: isInView ? 1 : 0,
           transition: "all 1s ease-in-out",
         }}
-        src="images/chart-1.webp"
+        src={ChartImage}
         alt="chart"
       />
       <motion.img
@@ -66,7 +68,7 @@ const FirstHomeSection = ({ children }: { children: React.ReactNode }) => {
           objectFit: "contain",
           transition: "all 1s ease-in-out",
         }}
-        src="images/chart-2.webp"
+        src={ChartImage1}
         alt="chart"
       />
 

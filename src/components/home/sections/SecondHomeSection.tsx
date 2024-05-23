@@ -2,22 +2,25 @@ import HorizontalLimiterWrapper from "../../HorizontalLimiterWrapper";
 import MainTitle from "../components/MainTitle";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import TimeIcon from "icons/sections/features/time.svg";
+import ComputerIcon from "icons/sections/features/computer.svg";
+import RocketIcon from "icons/sections/features/rocket.svg";
 
 const cards = [
   {
     title: "Monitoring 24/7",
     text: "Monitoring 24/7 is a crucial feature provided by analytics companies to ensure constant surveillance of business operations.",
-    image: "icons/sections/features/time.svg",
+    image: TimeIcon,
   },
   {
     title: "Widget System",
     text: "A widget system is a framework or platform that allows users to easily add and customize small, self-contained applications.",
-    image: "icons/sections/features/computer.svg",
+    image: ComputerIcon,
   },
   {
     title: "Best Performance",
     text: "Best performance refers to achieving optimal results and efficiency in various aspects of a business or system.",
-    image: "icons/sections/features/rocket.svg",
+    image: RocketIcon,
   },
 ];
 

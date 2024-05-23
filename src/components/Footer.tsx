@@ -1,11 +1,12 @@
 import { IFooter } from "../types";
 import HorizontalLimiterWrapper from "./HorizontalLimiterWrapper";
+import FacebookIcon from "icons/social_medias/facebook.svg";
+import TwitterIcon from "icons/social_medias/twitter.svg";
+import InstagramIcon from "icons/social_medias/instagram.svg";
+import LogoGrayIcon from "icons/logo/logo-gray.svg";
+import LogoTextGrayIcon from "icons/logo/logo-text-gray.svg";
 
-const socialMediaItems: string[] = [
-  "./icons/social_medias/facebook.svg",
-  "./icons/social_medias/twitter.svg",
-  "./icons/social_medias/instagram.svg",
-];
+const socialMediaItems: string[] = [FacebookIcon, TwitterIcon, InstagramIcon];
 
 const Footer = ({ navItems, className }: IFooter) => {
   return (
@@ -15,12 +16,12 @@ const Footer = ({ navItems, className }: IFooter) => {
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center gap-1">
             <img
-              src="./icons/logo/logo-gray.svg"
+              src={LogoGrayIcon}
               alt="logo"
               className="max-lg:w-5 max-lg:object-contain w-full h-full"
             />
             <img
-              src="./icons/logo/logo-text-gray.svg"
+              src={LogoTextGrayIcon}
               alt="logo"
               className="max-lg:w-24 max-lg:object-contain w-full h-full"
             />

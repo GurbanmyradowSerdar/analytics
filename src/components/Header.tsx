@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { AppContext } from "../App";
 import { IHeader } from "../types";
+import LogoIcon from "icons/logo/logo.svg";
+import LogoTextIcon from "icons/logo/logo-text.svg";
 
 const Header = ({ className }: IHeader) => {
   const navItems = useContext(AppContext);
@@ -9,12 +11,12 @@ const Header = ({ className }: IHeader) => {
       <div className="flex items-center gap-36 max-lg:gap-20 max-xl:gap-28">
         <a href="#" className="flex items-center gap-1">
           <img
-            src="./icons/logo/logo.svg"
+            src={LogoIcon}
             alt="logo"
             className="w-full h-full object-contain max-lg:w-5 max-xl:w-8 max-2xl:w-10"
           />
           <img
-            src="./icons/logo/logo-text.svg"
+            src={LogoTextIcon}
             alt="logo"
             className="w-full h-full object-contain max-lg:w-24 max-xl:w-28 max-2xl:w-28"
           />
