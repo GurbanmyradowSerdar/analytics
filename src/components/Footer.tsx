@@ -14,11 +14,13 @@ const Footer = ({ className }: IClassName) => {
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center gap-1">
             <img
+              loading="lazy"
               src={LogoGrayIcon}
               alt="logo"
               className="max-lg:w-5 max-lg:object-contain w-full h-full"
             />
             <img
+              loading="lazy"
               src={LogoTextGrayIcon}
               alt="logo"
               className="max-lg:w-24 max-lg:object-contain w-full h-full"
@@ -46,6 +48,7 @@ const Footer = ({ className }: IClassName) => {
                   className="transition-all duration-300 hover:scale-125"
                 >
                   <img
+                    loading="lazy"
                     src={item}
                     alt="social_media"
                     className="w-6 h-6 max-lg:w-4 max-lg:h-4"

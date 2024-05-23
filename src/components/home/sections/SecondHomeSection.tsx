@@ -58,6 +58,7 @@ function AnimatedCard(item: { image: string; title: string; text: string }) {
       <img
         src={item.image}
         alt={item.title}
+        loading="lazy"
         className="w-14 h-14 max-lg:w-10 max-lg:h-10 max-xl:w-12 max-xl:h-12"
       />
       <h4 className="font-bold text-text-main-color max-lg:text-sm">
