@@ -3,6 +3,7 @@ import useWindowWidth from "hooks/useWindowWidth";
 import { calculatingResponsiveSize } from "src/utils";
 import { IClassNameProps } from "types";
 import { CallbackArgs, VictoryPie } from "victory";
+import { twMerge as tw } from "tailwind-merge";
 
 const pieData = [
   {
@@ -28,7 +29,7 @@ const pieData = [
 function PieChartComponent({ className }: IClassNameProps) {
   const windowWidth = useWindowWidth();
   return (
-    <ChartCardWrapper className={`${className} gap-28 flex items-center`}>
+    <ChartCardWrapper className={tw(className, "gap-28 flex items-center")}>
       <VictoryPie
         data={pieData}
         animate={{

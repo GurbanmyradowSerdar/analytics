@@ -1,9 +1,8 @@
 import Title from "components/shared/Title";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { IClassNameProps } from "types";
 
-interface IProps extends IClassNameProps {
+interface IProps {
   name: string;
   amountOfUsers: number;
   price: number;

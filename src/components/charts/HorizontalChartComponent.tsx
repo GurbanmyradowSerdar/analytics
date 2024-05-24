@@ -9,6 +9,7 @@ import {
   VictoryAxis,
   VictoryLabel,
 } from "victory";
+import { twMerge as tw } from "tailwind-merge";
 
 const option1 = [
   {
@@ -58,7 +59,7 @@ const option2 = [
 const HorizontalChartComponent = ({ className }: IClassNameProps) => {
   const windowWidth = useWindowWidth();
   return (
-    <ChartCardWrapper className={`${className}`}>
+    <ChartCardWrapper className={tw(className)}>
       <VictoryChart
         horizontal
         domainPadding={10}
