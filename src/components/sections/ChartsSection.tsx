@@ -4,7 +4,7 @@ import data from "data";
 import Title from "components/shared/Title";
 import HorizontalLimiterWrapper from "components/shared/HorizontalLimiterWrapper";
 
-const ThirdHomeSection = () => {
+const ChartsSection = () => {
   const { chartCards: cards } = data;
   return (
     <section className="bg-[#F8F9FF] third-section pb-96 overflow-hidden max-lg:pb-52 max-xl:pb-72 max-2xl:pb-80">
@@ -54,4 +54,4 @@ const ThirdHomeSection = () => {
   );
 };
 
-export default ThirdHomeSection;
+export default ChartsSection;

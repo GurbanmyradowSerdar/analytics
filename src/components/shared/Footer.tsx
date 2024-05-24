@@ -1,14 +1,13 @@
 import LogoGrayIcon from "icons/logo/logo-gray.svg";
 import LogoTextGrayIcon from "icons/logo/logo-text-gray.svg";
 import data from "data";
-import { IClassNameProps } from "types";
 import HorizontalLimiterWrapper from "components/shared/HorizontalLimiterWrapper";
 
-const Footer = ({ className }: IClassNameProps) => {
+const Footer = () => {
   const { socialMediaIcons } = data;
   const { navItems } = data;
   return (
-    <footer className={`${className}`}>
+    <footer>
       <HorizontalLimiterWrapper className="pb-24 pt-3 mt-24 flex flex-col gap-14 max-lg:gap-10 max-lg:pb-20 max-lg:mt-20">
         <div className="h-[1px] w-full bg-[#2A407C]"></div>
         <div className="flex items-center justify-between">

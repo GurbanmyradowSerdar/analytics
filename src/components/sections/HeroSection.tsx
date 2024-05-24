@@ -8,19 +8,19 @@ import HorizontalLimiterWrapper from "components/shared/HorizontalLimiterWrapper
 
 const HeroSection = ({ children }: { children: React.ReactNode }) => {
   const windowWidth = useWindowWidth();
-  const ref = useRef(null);
-  const isInView = useInView(ref, {
+  const imageRef = useRef(null);
+  const isInView = useInView(imageRef, {
     once: true,
   });
-  const ref1 = useRef(null);
-  const isInView1 = useInView(ref1, {
+  const imageRef1 = useRef(null);
+  const isInView1 = useInView(imageRef1, {
     once: true,
   });
 
   return (
     <section className="min-h-screen bg-primary-color first-section relative overflow-hidden">
       <motion.img
-        ref={ref}
+        ref={imageRef}
         style={{
           position: "absolute",
           top: "38vh",
@@ -47,7 +47,7 @@ const HeroSection = ({ children }: { children: React.ReactNode }) => {
         alt="chart"
       />
       <motion.img
-        ref={ref1}
+        ref={imageRef1}
         style={{
           position: "absolute",
           top: "21vh",

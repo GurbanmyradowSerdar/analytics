@@ -16,7 +16,7 @@ const PricingCard = ({ amountOfUsers, name, price }: IProps) => {
     <motion.div
       ref={ref}
       style={{
-        transition: "all 0.3s ease-in-out",
+        transition: "all 0.3s ease-in-out 0.3s",
         translateY: isInView ? "0px" : "20px",
         opacity: isInView ? 1 : 0,
       }}

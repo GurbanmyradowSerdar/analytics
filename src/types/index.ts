@@ -3,7 +3,3 @@ export interface IClassNameProps {
 }
 
 export interface IChildrenProps extends React.PropsWithChildren {}
-
-export interface IChartCardWrapper extends IClassNameProps {
-  children: React.ReactNode;
-}

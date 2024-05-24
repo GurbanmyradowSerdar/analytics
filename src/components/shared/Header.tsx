@@ -1,13 +1,12 @@
 import LogoIcon from "icons/logo/logo.svg";
 import LogoTextIcon from "icons/logo/logo-text.svg";
 import data from "data";
-import { IClassNameProps } from "types";
 
-const Header = ({ className }: IClassNameProps) => {
+const Header = () => {
   const { navItems } = data;
 
   return (
-    <header className={`${className} flex items-center justify-between pt-12`}>
+    <header className="flex items-center justify-between pt-12">
       <div className="flex items-center gap-36 max-lg:gap-20 max-xl:gap-28">
         <a href="#" className="flex items-center gap-1">
           <img

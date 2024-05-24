@@ -1,9 +1,8 @@
-import { IClassNameProps } from "../../../types";
-import ChartCardWrapper from "./ChartCardWrapper";
+import ChartCardWrapper from "components/charts/ChartCardWrapper";
 
-const CalendarComponent = ({ className }: IClassNameProps) => {
+const CalendarComponent = () => {
   return (
-    <ChartCardWrapper className={`${className} flex justify-center`}>
+    <ChartCardWrapper className={"flex justify-center"}>
       <table className="text-center w-2/3 max-lg:w-1/2">
         <thead>
           <tr className="text-xs uppercase text-center max-lg:text-[11px]">

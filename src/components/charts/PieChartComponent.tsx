@@ -1,8 +1,8 @@
-import { IClassNameProps } from "../../../types";
-import { VictoryPie, CallbackArgs } from "victory";
-import ChartCardWrapper from "./ChartCardWrapper";
-import { calculatingResponsiveSize } from "../../../utils";
-import useWindowWidth from "../../../hooks/useWindowWidth";
+import ChartCardWrapper from "components/charts/ChartCardWrapper";
+import useWindowWidth from "hooks/useWindowWidth";
+import { calculatingResponsiveSize } from "src/utils";
+import { IClassNameProps } from "types";
+import { CallbackArgs, VictoryPie } from "victory";
 
 const pieData = [
   {

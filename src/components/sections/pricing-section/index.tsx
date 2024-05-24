@@ -2,9 +2,11 @@ import PricingCard from "components/sections/pricing-section/PricingCard";
 import HorizontalLimiterWrapper from "components/shared/HorizontalLimiterWrapper";
 import Title from "components/shared/Title";
 import data from "data";
+import { IChildrenProps } from "types";
 
-const PricingSection = ({ children }: { children: React.ReactNode }) => {
+const PricingSection = ({ children }: IChildrenProps) => {
   const { priceCards: cards } = data;
+
   return (
     <section className="bg-primary-color fourth-section pt-20 max-lg:pt-12">
       <HorizontalLimiterWrapper className="flex flex-col gap-20 max-lg:gap-12">
@@ -18,16 +20,9 @@ const PricingSection = ({ children }: { children: React.ReactNode }) => {
           </p>
         </div>
         <div className="flex justify-between">
-          {cards.map((item, i) => {
-            return (
-              <PricingCard
-                key={i}
-                amountOfUsers={item.amountOfUsers}
-                name={item.name}
-                price={item.price}
-              />
-            );
-          })}
+          {cards.map((item, i) => (
+            <PricingCard {...item} key={i} />
+          ))}
         </div>
       </HorizontalLimiterWrapper>
       {children}

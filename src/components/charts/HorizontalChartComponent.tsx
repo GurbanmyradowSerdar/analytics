@@ -1,5 +1,7 @@
-import { IClassNameProps } from "../../../types";
-import ChartCardWrapper from "./ChartCardWrapper";
+import ChartCardWrapper from "components/charts/ChartCardWrapper";
+import useWindowWidth from "hooks/useWindowWidth";
+import { calculatingResponsiveSize } from "src/utils";
+import { IClassNameProps } from "types";
 import {
   VictoryChart,
   VictoryBar,
@@ -7,8 +9,6 @@ import {
   VictoryAxis,
   VictoryLabel,
 } from "victory";
-import { calculatingResponsiveSize } from "../../../utils";
-import useWindowWidth from "../../../hooks/useWindowWidth";
 
 const option1 = [
   {
