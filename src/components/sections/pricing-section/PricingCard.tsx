@@ -20,7 +20,7 @@ const PricingCard = ({ amountOfUsers, name, price }: IProps) => {
         opacity: isInView ? 1 : 0,
       }}
       className="flex flex-col bg-[#11214E] px-14 py-12 rounded-3xl gap-12 flex-[0_1_25%] group hover:bg-white transition-all duration-300 hover:scale-[1.02] shadow-xl
-      max-lg:gap-7 max-xl:px-8 max-xl:py-7"
+      max-lg:gap-7 max-xl:px-7 max-xl:py-6 max-xl:flex-[0_0_31%]"
     >
       <div className="flex flex-col text-center">
         <Title

@@ -9,7 +9,7 @@ const ChartCardWrapper = ({ children, className }: IProps) => {
       className={tw(
         "bg-white px-14 py-6 rounded-3xl drop-shadow-xl",
         className,
-        "max-lg:px-6 max-lg:py-4 max-xl:px-12 max-xl:py-5"
+        "max-lg:px-6 max-lg:py-4 max-xl:px-10 max-xl:py-5"
       )}
     >
       {children}

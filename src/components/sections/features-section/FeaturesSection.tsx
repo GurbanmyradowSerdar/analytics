@@ -22,7 +22,7 @@ const FeaturesSection = () => {
             external databases.
           </p>
         </div>
-        <div className="flex gap-32 max-lg:gap-20 max-xl:gap-28">
+        <div className="flex gap-32 max-lg:gap-10 max-xl:gap-14">
           {cards.map((item, i) => (
             <AnimatedCard {...item} index={i} key={i} />
           ))}

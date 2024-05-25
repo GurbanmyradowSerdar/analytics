@@ -3,7 +3,7 @@ import ChartCardWrapper from "components/charts/ChartCardWrapper";
 const CalendarComponent = () => {
   return (
     <ChartCardWrapper className={"flex justify-center"}>
-      <table className="text-center w-2/3 max-lg:w-1/2">
+      <table className="text-center w-2/3 max-lg:w-1/2 max-xl:w-1/2">
         <thead>
           <tr className="text-xs uppercase text-center max-lg:text-[11px]">
             <th className="p-4 max-lg:p-3">Mon</th>

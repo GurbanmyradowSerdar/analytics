@@ -15,7 +15,7 @@ const ChartsSection = () => {
           return i === 1 ? (
             <div
               key={i}
-              className="flex items-center justify-between space-x-5"
+              className="flex items-center justify-between max-xl:gap-5"
             >
               <item.chart className="flex-[0_1_50%]" />
               <motion.div
@@ -32,7 +32,10 @@ const ChartsSection = () => {
               </motion.div>
             </div>
           ) : (
-            <div key={i} className="flex items-center justify-between">
+            <div
+              key={i}
+              className="flex items-center justify-between max-xl:gap-5"
+            >
               <motion.div
                 ref={ref}
                 style={{
