@@ -5,6 +5,7 @@ interface Iprops {
   image: string;
   title: string;
   text: string;
+  index: number;
 }
 
 function AnimatedCard(item: Iprops) {
@@ -15,8 +16,8 @@ function AnimatedCard(item: Iprops) {
     <motion.div
       ref={ref}
       style={{
-        transition: "all 0.8s ease-in-out",
-        translateY: isInView ? "0px" : "20px",
+        transition: `all 0.8s ease-in-out ${item.index * 0.2}s`,
+        translateY: isInView ? "0px" : "50px",
         opacity: isInView ? 1 : 0,
       }}
       className="flex flex-col items-center gap-6 flex-[1_1_0px] text-center max-lg:gap-4"

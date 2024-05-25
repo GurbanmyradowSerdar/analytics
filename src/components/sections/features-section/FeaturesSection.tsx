@@ -24,7 +24,7 @@ const FeaturesSection = () => {
         </div>
         <div className="flex gap-32 max-lg:gap-20 max-xl:gap-28">
           {cards.map((item, i) => (
-            <AnimatedCard {...item} key={i} />
+            <AnimatedCard {...item} index={i} key={i} />
           ))}
         </div>
       </HorizontalLimiterWrapper>

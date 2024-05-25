@@ -8,8 +8,8 @@ const Title = ({ text, className }: IProps) => {
   return (
     <p
       className={tw(
-        className,
-        "text-text-main-color text-[40px] font-bold max-lg:text-2xl max-xl:text-4xl"
+        "text-text-main-color text-[40px] font-bold max-lg:text-2xl max-xl:text-4xl",
+        className
       )}
     >
       {text}
