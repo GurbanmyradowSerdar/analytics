@@ -12,6 +12,8 @@ export default {
       "primary-color": "#172755",
       "secondary-color": "#EF2A82",
       white: "#fff",
+      blue: "#1E4ED8",
+      "blue-bold": "#172655",
     },
     fontFamily: {
       Roboto: ["Roboto", "sans-serif"],
