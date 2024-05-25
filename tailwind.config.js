@@ -6,16 +6,17 @@ export default {
     "./components/**/*.{ts,tsx}",
   ],
   theme: {
+    colors: {
+      "text-main-color": "#172755",
+      "text-secondary-color": "#8794BA",
+      "primary-color": "#172755",
+      "secondary-color": "#EF2A82",
+      white: "#fff",
+    },
+    fontFamily: {
+      Roboto: ["Roboto", "sans-serif"],
+    },
     extend: {
-      fontFamily: {
-        Roboto: ["Roboto", "sans-serif"],
-      },
-      colors: {
-        "text-main-color": "#172755",
-        "text-secondary-color": "#8794BA",
-        "primary-color": "#172755",
-        "secondary-color": "#EF2A82",
-      },
       screens: {
         lg: "1025px",
         xl: "1281px",
@@ -23,5 +24,6 @@ export default {
       },
     },
   },
+
   plugins: [],
 };
